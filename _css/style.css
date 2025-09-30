@@ -588,6 +588,18 @@ body {
     object-fit: contain;
     /* Redimensiona a imagem para caber mantendo a proporção */
 }
+.pipe_sherek{
+    position: absolute;
+    bottom: 0;
+    /* Alinha na parte inferior */
+    width: 80px;
+    animation: pipe-animation var(--velocidade) infinite linear;
+    /* Animação de movimento */
+    animation-play-state: paused;
+    /* Começa pausado */
+    z-index: 1;
+    /* Garante que fique acima do fundo */
+}
 
 /* =========================================
    KEYFRAMES (ANIMAÇÕES CSS)
@@ -595,6 +607,9 @@ body {
    Define as animações usadas pelos elementos
    do jogo.
 */
+
+
+
 @keyframes tremer-tela {
 
     0%,
